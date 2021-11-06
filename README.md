@@ -1,7 +1,7 @@
 ﻿## Car Rental GET API
 
 It is a flask based search API that fetches the data of top 3 cars nearest to the user's location. It uses the data stored in a MongoDB database. 
-We have used  cloud based database named MongoDB  Atlas for ease of usage and easy deployment across systems.
+I have used  cloud based database named MongoDB  Atlas for ease of usage and easy deployment across systems.
 
 ### Technologies Used
 
