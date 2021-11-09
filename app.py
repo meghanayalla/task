@@ -24,7 +24,7 @@ def get_query(lon,lat):
     if (lon>-180) and (lon<180) and (lat>-90) and (lat<90):
         data = mongo.db.car_rental
         cars =[]
-        _cars = data.find({"loc.coordinates":{"$near":[-54,63]}}).limit(3)
+        _cars = data.find({"loc.coordinates":{"$near":[loc,lat]}}).limit(3)
         for a in _cars:
             cars.append({"id":a['driver'],'longitude':a['loc']['coordinates'][0],'latitude':a['loc']['coordinates'][1],'number_plate':a['number_plate']})
 
